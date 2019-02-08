@@ -1,0 +1,504 @@
+# Tested on Deeptest release 1.10.0
+cbmcArguments:
+  cover-function-only: false
+  depth: false
+  do-not-test-methods-with-access: [ private ]
+  java-generate-no-comments: true
+  no-trivial-tests: true
+  string-non-empty: true
+  string-printable: true
+units:
+  - target:
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/chartpart/PlotSurface_AxesChart.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/chartpart/PlotSurface_AxesChart.java
+    # Child of PlotSurface_AxesChart.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/series/Series.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/series/Series.java
+    # Child of PlotSurface_AxesChart.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/style/AxesChartStyler.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/style/AxesChartStyler.java
+  - target:
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/chartpart/AxisTitle.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/chartpart/AxisTitle.java
+  - target:
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/chartpart/PlotContent_OHLC.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/chartpart/PlotContent_OHLC.java
+    # Child of PlotContent_OHLC.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/OHLCSeries.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/OHLCSeries.java
+    # Child of PlotContent_OHLC.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/Utils.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/Utils.java
+    # Child of PlotContent_OHLC.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/style/lines/SeriesLines.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/style/lines/SeriesLines.java
+  - target:
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/chartpart/PlotContent_Category_Bar.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/chartpart/PlotContent_Category_Bar.java
+    # Child of PlotContent_Category_Bar.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/CategorySeries.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/CategorySeries.java
+    # Child of PlotContent_Category_Bar.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/style/CategoryStyler.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/style/CategoryStyler.java
+  - target:
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/chartpart/Legend_Marker.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/chartpart/Legend_Marker.java
+    # Child of Legend_Marker.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/series/MarkerSeries.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/series/MarkerSeries.java
+    # Child of Legend_Marker.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/style/Styler.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/style/Styler.java
+  - target:
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/chartpart/AxisTickMarks.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/chartpart/AxisTickMarks.java
+    # Child of AxisTickMarks.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/series/AxesChartSeries.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/series/AxesChartSeries.java
+  - target:
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/line/LineChart07.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/line/LineChart07.java
+    # Child of LineChart07.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/CategoryChart.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/CategoryChart.java
+    # Child of LineChart07.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/CategoryChartBuilder.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/CategoryChartBuilder.java
+    # Child of LineChart07.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/SwingWrapper.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/SwingWrapper.java
+    # Child of LineChart07.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/ExampleChart.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/ExampleChart.java
+  - target:
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/chartpart/Plot_Circular.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/chartpart/Plot_Circular.java
+  - target:
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/chartpart/PlotContent_Pie.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/chartpart/PlotContent_Pie.java
+    # Child of PlotContent_Pie.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/PieSeries.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/PieSeries.java
+    # Child of PlotContent_Pie.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/style/PieStyler.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/style/PieStyler.java
+    # Child of PlotContent_Pie.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/style/SumFormatter.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/style/SumFormatter.java
+  - target:
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/chartpart/PlotContent_XY.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/chartpart/PlotContent_XY.java
+    # Child of PlotContent_XY.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/XYSeries.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/XYSeries.java
+  - target:
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart12.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart12.java
+  - target:
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/standalone/readme/AdvancedExample.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/standalone/readme/AdvancedExample.java
+    # Child of AdvancedExample.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/XChartPanel.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/XChartPanel.java
+    # Child of AdvancedExample.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/XYChart.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/XYChart.java
+    # Child of AdvancedExample.class
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/XYChartBuilder.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/XYChartBuilder.java
+  - target:
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/chartpart/AxisTickLabels.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/chartpart/AxisTickLabels.java
+  - target:
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/XChartDemo.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/XChartDemo.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/area/AreaChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/area/AreaChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/area/AreaChart02.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/area/AreaChart02.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/area/AreaChart03.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/area/AreaChart03.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/area/AreaChart04.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/area/AreaChart04.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart02.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart02.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart03.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart03.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart04.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart04.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart05.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart05.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart06.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart06.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart07.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart07.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart08.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart08.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart09.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart09.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart10.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart10.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart11.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart11.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bar/BarChart12.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bar/BarChart12.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/bubble/BubbleChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/bubble/BubbleChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/date/DateChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/date/DateChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/date/DateChart02.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/date/DateChart02.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/date/DateChart03.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/date/DateChart03.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/date/DateChart04.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/date/DateChart04.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/date/DateChart05.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/date/DateChart05.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/date/DateChart06.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/date/DateChart06.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/date/DateChart07.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/date/DateChart07.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/date/DateChart08.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/date/DateChart08.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/dial/DialChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/dial/DialChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/line/LineChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/line/LineChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/line/LineChart02.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/line/LineChart02.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/line/LineChart03.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/line/LineChart03.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/line/LineChart04.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/line/LineChart04.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/line/LineChart05.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/line/LineChart05.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/line/LineChart06.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/line/LineChart06.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/line/LineChart07.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/line/LineChart07.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/line/LineChart08.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/line/LineChart08.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/ohlc/OHLCChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/ohlc/OHLCChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/ohlc/OHLCChart02.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/ohlc/OHLCChart02.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/ohlc/OHLCChart03.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/ohlc/OHLCChart03.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/pie/PieChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/pie/PieChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/pie/PieChart02.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/pie/PieChart02.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/pie/PieChart03.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/pie/PieChart03.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/pie/PieChart04.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/pie/PieChart04.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/pie/PieChart05.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/pie/PieChart05.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/pie/PieChart06.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/pie/PieChart06.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/radar/RadarChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/radar/RadarChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/realtime/RealtimeChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/realtime/RealtimeChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/realtime/RealtimeChart02.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/realtime/RealtimeChart02.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/realtime/RealtimeChart03.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/realtime/RealtimeChart03.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/realtime/RealtimeChart04.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/realtime/RealtimeChart04.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/realtime/RealtimeChart05.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/realtime/RealtimeChart05.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/realtime/RealtimeChart06.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/realtime/RealtimeChart06.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/scatter/ScatterChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/scatter/ScatterChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/scatter/ScatterChart02.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/scatter/ScatterChart02.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/scatter/ScatterChart03.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/scatter/ScatterChart03.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/scatter/ScatterChart04.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/scatter/ScatterChart04.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/stick/StickChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/stick/StickChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/theme/ThemeChart01.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/theme/ThemeChart01.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/theme/ThemeChart02.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/theme/ThemeChart02.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/theme/ThemeChart03.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/theme/ThemeChart03.java
+    # Child of XChartDemo.class
+    - dir: xchart-demo/target/classes
+      file: org/knowm/xchart/demo/charts/theme/ThemeChart04.class
+      sourceDir: xchart-demo/src/main/java
+      sourceFile: org/knowm/xchart/demo/charts/theme/ThemeChart04.java
+  - target:
+    - dir: xchart/target/classes
+      file: org/knowm/xchart/internal/chartpart/PlotContent_Category_Line_Area_Scatter.class
+      sourceDir: xchart/src/main/java
+      sourceFile: org/knowm/xchart/internal/chartpart/PlotContent_Category_Line_Area_Scatter.java
+phases:
+-
+  timeout: 60
+  cbmcArguments:
+    java-assume-inputs-non-null: true
+    max-nondet-array-length: 10
+    unwind: 1
+-
+  timeout: 120
+  cbmcArguments:
+    max-nondet-array-length: 20
+    unwind: 2
+-
+  timeout: 180
+  cbmcArguments:
+    max-nondet-array-length: 30
+    max-nondet-string-length: 10
+    unwind: 3
+
